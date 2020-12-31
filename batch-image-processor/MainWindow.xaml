@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Batch Image Processor" Height="250" Width="300">
     <Grid Background="#FF3C3C3C">
-        <Button Name="bt_processfolder" Content="Process Folder" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Height="22" Width="140" Background="White"/>
-        <Button Name="bt_processfile" Content="Process File" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Height="22" Width="140" Background="White"/>
+        <Button Name="bt_processfolder" Content="Process Folder" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Height="22" Width="140" Background="White" Click="bt_processfolder_Click"/>
+        <Button Name="bt_processfile" Content="Process File" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Height="22" Width="140" Background="White" Click="bt_processfile_Click"/>
         <ComboBox Name="cb_tool" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="194" BorderBrush="White" SelectedIndex="0" FontSize="10">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
@@ -19,6 +19,11 @@
             <ComboBoxItem Content="Resize and Crop (pick center)"/>
         </ComboBox>
         <Label Content="Tool" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="21" Background="{x:Null}" Foreground="White" FontSize="10"/>
+        <Label Content="Tool Properties" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Height="25" Background="{x:Null}" Foreground="White" FontSize="10" Width="79"/>
+        <Label Content="Width" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Height="21" Background="{x:Null}" Foreground="White" FontSize="9" Width="40"/>
+        <TextBox x:Name="tb_resize_width" HorizontalAlignment="Left" Margin="45,59,0,0" Text="800" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" FontSize="10"/>
+        <Label Content="Height" HorizontalAlignment="Left" Margin="85,56,0,0" VerticalAlignment="Top" Height="26" Background="{x:Null}" Foreground="White" FontSize="9" Width="40"/>
+        <TextBox x:Name="tb_resize_height" HorizontalAlignment="Left" Margin="121,59,0,0" Text="600" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" FontSize="10"/>
 
     </Grid>
 </Window>
